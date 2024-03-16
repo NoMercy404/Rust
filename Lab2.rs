@@ -46,6 +46,7 @@ fn main(){
 }
 
 // Z funkcją
+
 fn print_numbers(mut number:i32){
     while number>0 {
         let newnum = number%10;
@@ -127,7 +128,7 @@ fn main(){
 // 6. Zaimplementuj wyznaczanie pierwiastków funkcji rzeczywistej f metodą Newtona w postaci funkcji, która zrealizuje liczbę 
 // kroków algorytmu przekazaną w argumencie. Wyodrębnij funkcję, która zwróci znak pochodnej f' w punkcie. 
 // Obliczanie wartości funkcji f zrealizuj funkcją wpisaną "na twardo"w implementację metody Newtona.
-// 
+
 fn f(x: f64) -> f64 {
     3.0 * x - 9.0
 }
