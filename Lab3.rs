@@ -108,22 +108,23 @@ fn main(){
 
 // 6. Napisz funkcję pow_mod(x: u128, n: u128, p: u128) -> u128 która obliczy (x^n)%p w taki sposób,by działało to
 // prawidłowo dla jak największych danych. W celu ewentualnej optymalizacji czasowej użyj algorytmu szybkiego potęgowania.
-//W tym zadaniu jest błąd : thread 'main' has overflowed its stack trzeba przerobić f.rekurencyjną na funkcję iteracyjną
 
 fn fast_power(x:u128,n:u128)->u128{
     if n == 0{
         return 1;
     }
     if n%2 == 1{
-        return x*fast_power(x,u128::pow((n-1)/2,2))
+        return x*u128::pow(fast_power(x,(n-1)/2),2)
     }
-    return fast_power(x,u128::pow(n/2,2))
+    return u128::pow(fast_power(x,n/2),2)
 }
-
 fn pow_mod(x: u128, n: u128, p: u128) -> u128{
     return fast_power(x,n)%p;
 }
 
 fn main(){
-    println!("{}",pow_mod(3,4,9))
+    let x = 3;
+    let n = 4;
+    let p = 8;
+    println!("modulo z {} dla liczby {} podniesionej do potegi {} to {}",p,x,n,pow_mod(3,4,8))
 }
