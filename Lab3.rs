@@ -1,4 +1,4 @@
-// 1. Wyświetl tabelę widzialnych znaków ASCII wraz kodami (od 33 do 126).
+1. Wyświetl tabelę widzialnych znaków ASCII wraz kodami (od 33 do 126).
 
 fn print_ascii(){
     for i in 33..127{
@@ -9,7 +9,7 @@ fn main(){
     print_ascii();
 }
 
-// 2. Napisz funkcję, która dla danego całkowitego dodatniego n zwraca numer iteracji, w której osiągamy jedynkę w problemie Collatza (np. dla n=12 wynikiem jest 9).
+2. Napisz funkcję, która dla danego całkowitego dodatniego n zwraca numer iteracji, w której osiągamy jedynkę w problemie Collatza (np. dla n=12 wynikiem jest 9).
 
 fn how_many_iterations(mut num:i32)-> i32{
     let mut iterations = 0;
@@ -31,7 +31,7 @@ fn main(){
     println!("{}",how_many_iterations(12))
 }
 
-// 3. Napisz funkcję, która odpowiada na pytanie, czy jej argument jest liczbą Armstronga.
+3. Napisz funkcję, która odpowiada na pytanie, czy jej argument jest liczbą Armstronga.
 
 fn how_many_digits(mut n:u32)->u32{
     let mut counter = 0;
@@ -64,7 +64,7 @@ fn main(){
     println!("{}",does_armstrong_number(n,num_of_digits))
 }
 
-// 4. Napisz funkcję, która odpowiada na pytanie, czy jej argument jest liczbą doskonałą.
+4. Napisz funkcję, która odpowiada na pytanie, czy jej argument jest liczbą doskonałą.
 
 fn is_perfect(n:i128)->bool{
     let mut sum = 0;
@@ -86,7 +86,7 @@ fn main(){
 }
 
 
-// 5. Napisz funkcję, która wyświetli rozkład podanej liczby na czynniki pierwsze.
+5. Napisz funkcję, która wyświetli rozkład podanej liczby na czynniki pierwsze.
 
 fn rozklad(mut n:i64){
     let mut dzielnik = 2;
@@ -106,8 +106,8 @@ fn main(){
     rozklad(n);
 }
 
-// 6. Napisz funkcję pow_mod(x: u128, n: u128, p: u128) -> u128 która obliczy (x^n)%p w taki sposób,by działało to
-// prawidłowo dla jak największych danych. W celu ewentualnej optymalizacji czasowej użyj algorytmu szybkiego potęgowania.
+6. Napisz funkcję pow_mod(x: u128, n: u128, p: u128) -> u128 która obliczy (x^n)%p w taki sposób,by działało to
+prawidłowo dla jak największych danych. W celu ewentualnej optymalizacji czasowej użyj algorytmu szybkiego potęgowania.
 
 fn fast_power(x:u128,n:u128)->u128{
     if n == 0{
