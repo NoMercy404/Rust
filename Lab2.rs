@@ -1,8 +1,8 @@
-// 5. Zmodyfikuj kod z zadań 1-4 tak, aby stanowiły one osobne funkcje.
+5. Zmodyfikuj kod z zadań 1-4 tak, aby stanowiły one osobne funkcje.
 
-// 1. Napisz program, który oblicza silnię dla danej liczby.
+1. Napisz program, który oblicza silnię dla danej liczby.
 
-// Bez osobnej funkcji
+    Bez osobnej funkcji
 
 fn main(){
     let mut factorial = 1;
@@ -16,7 +16,7 @@ fn main(){
     println!("slinia z liczby {n} wynosi {factorial}");
 }
 
-// Z funkcją
+    Z funkcją
 
 fn calc_fact(n:u64)-> u64{
     let mut factorial = 1;
@@ -32,9 +32,9 @@ fn main(){
     println!("slinia z liczby {n} wynosi {:?}",calc_fact(n));
 }
 
-// 2. Napisz program, który wyświetla cyfry danej liczby całkowitej od końca.
+2. Napisz program, który wyświetla cyfry danej liczby całkowitej od końca.
 
-// Bez osobnej funkcji
+    Bez osobnej funkcji
 
 fn main(){
     let mut number = 12222231;
@@ -45,7 +45,7 @@ fn main(){
     }
 }
 
-// Z funkcją
+    Z funkcją
 
 fn print_numbers(mut number:i32){
     while number>0 {
@@ -59,9 +59,9 @@ fn main(){
     print_numbers(number)
 }
 
-// 3. Napisz program, który oblicza sumę cyfr danej liczby całkowitej.
+3. Napisz program, który oblicza sumę cyfr danej liczby całkowitej.
 
-// Bez osobnej funkcji
+    Bez osobnej funkcji
 
 fn main(){
     let mut j = 122334;
@@ -73,7 +73,7 @@ fn main(){
     println!("suma {sum}");
 }
 
-// Z funkcją
+    Z funkcją
 
 fn sum_of_digits(mut n:u64)->u64{
     let mut sum = 0;
@@ -88,9 +88,9 @@ fn main(){
     println!("suma {:?}",sum_of_digits(num));
 }
 
-// 4. Napisz program, który znajduje wszystkie trójki pitagorejskie o wartościach nie większych niż dana. Zakładamy, że 0 < a < b < c.
+4. Napisz program, który znajduje wszystkie trójki pitagorejskie o wartościach nie większych niż dana. Zakładamy, że 0 < a < b < c.
 
-// Bez osobnej funkcji
+    Bez osobnej funkcji
 
 fn main(){
     let j = 20;
@@ -105,7 +105,7 @@ fn main(){
     }
 }
 
-// Z funkcją
+    Z funkcją
 
 fn pythagorean_triples(n:u64){
     for a in 1..n{
@@ -125,9 +125,9 @@ fn main(){
     pythagorean_triples(j);
 }
 
-// 6. Zaimplementuj wyznaczanie pierwiastków funkcji rzeczywistej f metodą Newtona w postaci funkcji, która zrealizuje liczbę 
-// kroków algorytmu przekazaną w argumencie. Wyodrębnij funkcję, która zwróci znak pochodnej f' w punkcie. 
-// Obliczanie wartości funkcji f zrealizuj funkcją wpisaną "na twardo"w implementację metody Newtona.
+6. Zaimplementuj wyznaczanie pierwiastków funkcji rzeczywistej f metodą Newtona w postaci funkcji, która zrealizuje liczbę 
+kroków algorytmu przekazaną w argumencie. Wyodrębnij funkcję, która zwróci znak pochodnej f' w punkcie. 
+Obliczanie wartości funkcji f zrealizuj funkcją wpisaną "na twardo" w implementację metody Newtona.
 
 fn f(x: f64) -> f64 {
     3.0 * x - 9.0
